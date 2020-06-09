@@ -4,7 +4,7 @@ provider "tfe" {
 
 data "tfe_workspace" "ws" {
   name         = var.ws_name
-  organization = "synaptic_racing"
+  organization = var.org
 }
 
 resource "tfe_variable" "variable" {
@@ -19,6 +19,10 @@ resource "tfe_variable" "variable" {
 }
 
 variable "ws_name" {
+  type = string
+}
+
+variable "org" {
   type = string
 }
 

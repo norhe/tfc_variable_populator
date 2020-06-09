@@ -1,4 +1,5 @@
 ws_name = "workspace_to_update"
+org     = "my_organization"
 # key, value, category, hcl, sensitive, description
 variable_list = {
   "tf_hostname"          : ["app.terraform.io", "terraform", "false", "false", "Hostname of TF service"],
